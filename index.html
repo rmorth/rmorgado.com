@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+    <title>morthwyl 🎇 Rodrigo Morgado</title><!-- 🧱🤖✨🎇🎆 -->
+    <!-- I see you are the curious type ;) -->
+    <style>
+        @font-face {
+            font-family: "bitstream_vera_sans_monoroman";
+            src: url("fonts/VeraMono-webfont.eot");
+            src: url("fonts/VeraMono-webfont.eot?#iefix") format("embedded-opentype"),
+                url("fonts/VeraMono-webfont.woff2") format("woff2"),
+                url("fonts/VeraMono-webfont.woff") format("woff"),
+                url("fonts/VeraMono-webfont.ttf") format("truetype"),
+                url("fonts/VeraMono-webfont.svg#bitstream_vera_sans_monoroman") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            /* background: -webkit-gradient(linear, left top, right bottom, from(#202C39), to(#283845)) fixed; */
+            background: -webkit-radial-gradient(circle, #283845, #202C39) fixed;
+            font-family: 'bitstream_vera_sans_monoroman';
+            color: white;
+            display: flex;
+            margin: 0;
+        }
+
+        a {
+            color: #DB6F33;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-grow: 1;
+            margin: auto;
+        }
+
+        .container-child {
+            /* background-color: #5899E2; */
+            display: flex;
+            justify-content: center;
+            flex-basis: 50%;
+        }
+
+        .info {
+            /* border-right: 4px solid #DB6F33; */
+            
+        }
+
+        .title {
+            color: #DB6F33;
+            font-size: 60px;
+            /* font-weight: 400; */
+            margin: 0;
+        }
+
+        .subtitle {
+            color: #AAA;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .short-description {
+            font-size: 22px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            background-color: #202C39;
+            padding: 5px;
+        }
+
+        .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .link > a {
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+
+        a {
+            padding: 2px;
+        }
+
+        a:hover, a:focus {
+            color: #202C39;
+            text-decoration: none;
+            background-color: #DB6F33;
+            box-shadow: -3px 3px 0 #65AFFF;
+        }
+
+        .link > img {
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+
+        .projects {
+            border-left: 4px solid rgba(219, 111, 51);
+        }
+
+        .project-list {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+        }
+
+        .project-description {
+            margin: 0;
+            color: #AAA;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-child info">
+            <div>
+                <h1 class="title">Rodrigo Morgado</h1>
+                <p class="subtitle">morthwyl • wylliemorth</p>
+                <!--
+                    Computer enthusiast, full-stack developer and hobbyist.
+                    TODO: Think about a better short description
+                -->
+                <p class="short-description">
+                    Computer enthusiast, full-stack developer
+                    <br>
+                    and hobbyist.
+                </p>
+                <div class="links">
+                    <div class="link">
+                        <img src="img/github.png" width="24" height="24" alt="Github">
+                        <a href="https://www.github.com/SirMorthwyl">SirMorthwyl</a>
+                    </div>
+                    <div class="link">
+                        <img src="img/twitter.png" width="24" height="24" alt="Twitter">
+                        <a href="https://twitter.com/wylliemorth">wylliemorth</a>
+                    </div>
+                    <div class="link">
+                        <img src="img/linkedin.png" width="24" height="24" alt="Twitter">
+                        <a href="https://www.linkedin.com/in/rodrigo-morgado-995819218/">Rodrigo Morgado</a>
+                    </div>
+                    <div class="link">
+                        <img src="img/email.png" width="24" height="24" alt="Twitter">
+                        <a href="mailto:dummy@dummy.com">dummy@dummy.com</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container-child projects">
+            <div>
+                <div class="project-list">
+                    <div class="project">
+                        <h3><a href="example.com">Project Title</a></h3>
+                        <p class="project-description">This does this and that, very good.</p>
+                    </div>
+                    <div class="project">
+                        <h3><a href="example.com">Project Title</a></h3>
+                        <p class="project-description">Optimisation and resource management, very good as well.</p>
+                    </div>
+                    <div class="project">
+                        <h3><a href="example.com">Project Title</a></h3>
+                        <p class="project-description">This was for funsies but very good too.</p>
+                    </div>
+                    <div class="project">
+                        <h3><a href="example.com">Project Title</a></h3>
+                        <p class="project-description">On-going project, still active, going great though.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
