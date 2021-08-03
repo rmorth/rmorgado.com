@@ -2,7 +2,6 @@
   font-family: "bitstream_vera_sans_monoroman";
   src: url("fonts/VeraMono-webfont.eot");
   src: url("fonts/VeraMono-webfont.eot?#iefix") format("embedded-opentype"),
-    url("fonts/VeraMono-webfont.woff2") format("woff2"),
     url("fonts/VeraMono-webfont.woff") format("woff"),
     url("fonts/VeraMono-webfont.ttf") format("truetype"),
     url("fonts/VeraMono-webfont.svg#bitstream_vera_sans_monoroman")
@@ -12,21 +11,26 @@
 }
 
 html {
-  --main-bg-color: #202c39;
-  --secondary-bg-color: #283845;
-  --main-accent-color: #db6f33;
-  --secondary-accent-color: #65afff;
+  --main-bg-color: #0c0c0c;
+  --secondary-bg-color: #0a0a0a;
+  --main-accent-color: #ff7200;
+  --secondary-accent-color: white;
   height: 100%;
+}
+/*
+  242325 29262b ff7200 65afff
+  202c39 283845 db6f33 65afff;
+  0a0908 0a0908 ff7200 65afff
+*/
+
+::selection {
+  background: var(--main-accent-color);
+  color: var(--main-bg-color);
 }
 
 body {
   height: 100%;
-  background: -webkit-radial-gradient(
-      circle,
-      var(--secondary-bg-color),
-      var(--main-bg-color)
-    )
-    fixed;
+  background-color: var(--main-bg-color);
   font-family: "bitstream_vera_sans_monoroman";
   color: white;
   display: flex;
@@ -44,7 +48,7 @@ a:focus {
   color: var(--main-bg-color);
   text-decoration: none;
   background-color: var(--main-accent-color);
-  box-shadow: -3px 3px 0 var(--secondary-accent-color);
+  outline: 1px dashed var(--secondary-accent-color);
 }
 
 .container {
@@ -72,7 +76,7 @@ a:focus {
 
 .subtitle {
   color: #aaa;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -82,19 +86,24 @@ a:focus {
 
 .links {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
   border-radius: 10px;
   background-color: var(--main-bg-color);
   padding: 5px;
+  max-width: 600px;
 }
 
 .link {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: max-content;
   padding: 5px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 10px;
+  margin: 4px;
 }
 
 .link > a {
