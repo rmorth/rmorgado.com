@@ -1,2 +1,1 @@
-My personal page, initially inspired in [xpaw](https://github.com/xPaw/xpaw.me).
-
+My personal page, still under construction...

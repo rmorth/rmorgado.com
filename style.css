@@ -34,6 +34,8 @@ body {
   font-family: "bitstream_vera_sans_monoroman";
   color: white;
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin: 0;
 }
 
@@ -48,24 +50,16 @@ a:focus {
   color: var(--main-bg-color);
   text-decoration: none;
   background-color: var(--main-accent-color);
-  outline: 1px dashed var(--secondary-accent-color);
+  box-shadow: -3px 3px var(--secondary-accent-color);
+  transition: box-shadow 0.1s;
 }
 
-.container {
+.info-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  flex-grow: 1;
-
-  /* margin: auto; */
-}
-
-.container-child {
-  display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-basis: 50%; */
+  /* margin: auto; */
 }
 
 .title {
@@ -114,4 +108,42 @@ a:focus {
 .link > img {
   margin-left: 6px;
   margin-right: 6px;
+}
+
+.projects-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-links {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  font-size: 1.1em;
+  flex-flow: column wrap;
+  align-items: center;
+  width: max-content;
+  padding: 16px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.project-tags {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.projects-container .title {
+  color: var(--secondary-accent-color);
+  font-size: 20px;
+  margin: 16px;
 }
