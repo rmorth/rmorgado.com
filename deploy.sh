@@ -33,7 +33,7 @@ backup()
 deploy()
 {
     echo "Starting deployment"
-    rsync -av --exclude='*.git' --exclude='*.txt' --exclude '*.md' --exclude='deploy.sh'  $SOURCE_DIR $TARGET_DIR
+    rsync -av --exclude='*.git*' --exclude='*.txt' --exclude '*.md' --exclude='deploy.sh' $SOURCE_DIR/* $TARGET_DIR
     find $TARGET_DIR -type d -exec chmod 755 {} \;
     find $TARGET_DIR -type f -exec chmod 644 {} \;
     chown -R www-data:www-data $TARGET_DIR
