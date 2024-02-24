@@ -40,5 +40,11 @@ deploy()
     echo "Deployment completed successfully"
 }
 
+nginx_restart()
+{
+    sudo systemctl restart nginx
+}
+
 prompt_yn "Do you wish to create a backup?" && backup
 prompt_yn "Do you wish to proceed with deployment?" && deploy
+prompt_yn "Do you wish to restart nginx?" && nginx_restart
