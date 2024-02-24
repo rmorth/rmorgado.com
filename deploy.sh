@@ -13,6 +13,7 @@ prompt_yn()
         MSG="Do you want to proceed?"
     fi
 
+    echo "$MSG"
     select yn in "Yes" "No"; do
         case $yn in
             Yes ) return 0;;
