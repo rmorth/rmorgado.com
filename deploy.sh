@@ -26,7 +26,7 @@ backup()
 {
     printf "Backing up: "
     mkdir -p "$BACKUP_DIR"
-    cp -R "$TARGET_DIR/*" "$BACKUP_FILE"
+    cp -R "$TARGET_DIR" "$BACKUP_FILE"
     echo "OK"
 }
 
